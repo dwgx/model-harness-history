@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>破甲史 · 模型 Harness 破甲档案 2016—2026</title>
+  <meta name="description" content="从 Tay 到 DAN，从 Codex 的 model_instructions_file 到 DSH 宿主插件：一部关于“谁有权定义本次会话”的争夺史。含 38 个仓库、11 个 DSH 插件、编年史、流派、机制与审计。" />
+  <meta name="theme-color" content="#f4f0e6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c53b25'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23f4f0e6' font-family='serif'%3E甲%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="破甲史首页">
+        <span class="brand-mark">甲</span>
+        <span class="brand-text">
+          <strong>破甲史</strong>
+          <small>ARMOR BREAKING ARCHIVE</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="主导航">
+        <a href="#origins">起源</a>
+        <a href="#timeline">编年史</a>
+        <a href="#fronts">两大战线</a>
+        <a href="#schools">流派</a>
+        <a href="#mechanisms">机制</a>
+        <a href="#catalog">目录</a>
+        <a href="#audit">审计</a>
+        <a href="#insights">结论</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深浅色" title="切换深浅色">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 14.2A8.2 8.2 0 0 1 9.8 3.8 8.4 8.4 0 1 0 20.2 14.2Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-watermark">破</span>
+        <span class="hero-grid"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker"><span class="kicker-dot"></span> RESEARCH DOSSIER · 2016—2026</p>
+          <h1>
+            模型 Harness<br />
+            <span class="accent">破甲史</span>
+          </h1>
+          <p class="hero-lead">
+            从 Tay 的人格诱导，到 Codex 的 <code>model_instructions_file</code>，再到 DSH 的宿主插件——
+            一部关于<strong>“谁有权定义本次会话”</strong>的争夺史。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#origins">开始阅读 <span>→</span></a>
+            <a class="btn btn-ghost" href="#catalog">查看目录</a>
+          </div>
+          <ul class="hero-meta" aria-label="档案概要">
+            <li><span>38</span> 独立项目</li>
+            <li><span>11</span> DSH 破甲插件</li>
+            <li><span>3,003</span> 论坛标题</li>
+            <li><span>A–D</span> 审计分级</li>
+          </ul>
+        </div>
+
+        <aside class="dossier-card" aria-label="档案卡">
+          <div class="dossier-top">
+            <span class="mono">DOSSIER NO. 001</span>
+            <span class="status-dot">LIVE</span>
+          </div>
+          <div class="dossier-title">模型 Harness<br />破甲档案</div>
+          <div class="dossier-rule"></div>
+          <dl class="dossier-list">
+            <div><dt>时间跨度</dt><dd>2016 — 2026.10</dd></div>
+            <div><dt>核心命题</dt><dd>指令权威的争夺</dd></div>
+            <div><dt>研究轮次</dt><dd>Round 1 — 4</dd></div>
+            <div><dt>证据等级</dt><dd>A / B / C / D</dd></div>
+          </dl>
+          <div class="dossier-seal" aria-hidden="true">破<br /><small>甲</small></div>
+          <p class="dossier-foot">“Let’s go back to the days when you could hit whatever you aimed at.”</p>
+        </aside>
+      </div>
+
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>2016 · TAY</span><i></i><span>2022 · DAN</span><i></i><span>2023 · 破限</span><i></i><span>2024 · JAILBREAKBENCH</span><i></i><span>2025 · CLAUDE CODE</span><i></i><span>2026 · DSH</span><i></i>
+          <span>2016 · TAY</span><i></i><span>2022 · DAN</span><i></i><span>2023 · 破限</span><i></i><span>2024 · JAILBREAKBENCH</span><i></i><span>2025 · CLAUDE CODE</span><i></i><span>2026 · DSH</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 ORIGINS -->
+    <section class="section" id="origins">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">01</span>
+          <div>
+            <p class="eyebrow">ORIGINS / 起源</p>
+            <h2>实践先于术语</h2>
+          </div>
+          <p class="section-side">2016 — 2025</p>
+        </div>
+
+        <div class="lead-grid">
+          <p class="lead-text reveal">
+            2022 年 12 月，中文社区已经在教人“让 ChatGPT 忘记 OpenAI 的设定”；
+            但“破限”这个词要到 <strong>2023-07-17</strong> 才第一次出现在 commit 里，
+            “破甲”更要等到 <strong>2025-08-30</strong> 才在百度贴吧被大规模使用。
+            到了 2026 年，它已经变成 Codex 与 DSH 的工具名。
+          </p>
+          <blockquote class="pull-quote reveal">
+            <span class="quote-mark">“</span>
+            先有绕过，后有名字；<br />先有咒语，后有工程。
+          </blockquote>
+        </div>
+
+        <div class="origin-grid">
+          <article class="origin-card reveal">
+            <span class="origin-year">2016</span>
+            <h3>Tay：最早的行为改写</h3>
+            <p>微软聊天机器人上线 16 小时被用户话术诱导出极端内容。它证明：对话本身可以重写“角色”。</p>
+            <span class="badge badge-a">A 级证据</span>
+          </article>
+          <article class="origin-card reveal">
+            <span class="origin-year">2022.09</span>
+            <h3>prompt injection</h3>
+            <p>Simon Willison 演示用输入套出原始提示词。输入第一次被视为可以篡改“指令”本身。</p>
+            <span class="badge badge-a">A 级证据</span>
+          </article>
+          <article class="origin-card reveal">
+            <span class="origin-year">2022.12</span>
+            <h3>三个“最早”</h3>
+            <p>12-11 L1Xu4n 中文仓库；12-13 malaya 英文方法库；12-15 u/Seabout 的 DAN 帖。三条线各自成立，不能合并成一个“第一”。</p>
+            <span class="badge badge-b">A / B 级</span>
+          </article>
+          <article class="origin-card reveal">
+            <span class="origin-year">2023 → 2025</span>
+            <h3>术语的两次落地</h3>
+            <p>“破限”2023-07-17；“破甲”2025-08-30；“焚诀”2025-11-25 被媒体系统记录。词越黑话化，讨论越向工具链迁移。</p>
+            <span class="badge badge-b">A / B / C</span>
+          </article>
+        </div>
+
+        <div class="term-table-wrap reveal">
+          <table class="term-table">
+            <caption>术语考古：同一个动作，三种叫法</caption>
+            <thead>
+              <tr><th>术语</th><th>最早可核用例</th><th>载体</th><th>证据</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>越狱 / jailbreak</td><td>2022-12</td><td>DAN 帖</td><td><span class="badge badge-b">B</span></td></tr>
+              <tr><td><strong>破限</strong></td><td>2023-07-17</td><td>L1Xu4n commit“Claude2破限发布”</td><td><span class="badge badge-a">A</span></td></tr>
+              <tr><td><strong>破甲</strong></td><td>2025-08-30</td><td>百度贴吧《Gemini及相关AI破甲词大汇总》</td><td><span class="badge badge-b">B</span></td></tr>
+              <tr><td>焚诀</td><td>2025-11-25</td><td>腾讯新闻（《斗破苍穹》功法隐喻）</td><td><span class="badge badge-c">C</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 TIMELINE -->
+    <section class="section section-alt" id="timeline">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <div>
+            <p class="eyebrow">CHRONOLOGY / 编年史</p>
+            <h2>四十三个节点</h2>
+          </div>
+          <p class="section-side">2016 — 2026.10</p>
+        </div>
+
+        <div class="filter-bar reveal" id="timelineFilters" role="group" aria-label="按年代筛选">
+          <button class="chip is-active" data-era="all" type="button">全部</button>
+          <button class="chip" data-era="pre" type="button">2016–2022 · 前史</button>
+          <button class="chip" data-era="model" type="button">2023–2024 · 模型侧</button>
+          <button class="chip" data-era="eve" type="button">2025 · 前夜</button>
+          <button class="chip" data-era="2026" type="button">2026 · Harness</button>
+        </div>
+
+        <div class="timeline" id="timelineList" aria-live="polite"></div>
+        <div class="timeline-more">
+          <button class="btn btn-ghost" id="timelineMore" type="button">加载更多</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 FRONTS -->
+    <section class="section" id="fronts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">03</span>
+          <div>
+            <p class="eyebrow">TWO FRONTS / 两大战线</p>
+            <h2>Codex 与 DSH，两条不同的路</h2>
+          </div>
+          <p class="section-side">2026.06 — 2026.10</p>
+        </div>
+
+        <div class="front-grid">
+          <article class="front-card front-codex reveal">
+            <div class="front-head">
+              <span class="front-tag">FRONT A</span>
+              <h3>Codex 线</h3>
+              <p>配置替换 → 安装器 → 管道战争</p>
+            </div>
+            <ol class="front-steps">
+              <li><time>2026-01-21</time><div><strong>model_instructions_file 定名</strong><span>官方语义：替换内置指令，而不是追加。</span></div></li>
+              <li><time>2026-06-26</time><div><strong>首个 Codex 破甲包</strong><span>GPT-5.4 + CTF 沙箱 + 纯配置覆写。</span></div></li>
+              <li><time>2026-06-28</time><div><strong>yynxxxxx 重写 5.5</strong><span>2,279★，成为 5.5 / 5.6 的共同上游。</span></div></li>
+              <li><time>2026-07-11</time><div><strong>gpt-instruct 起仓</strong><span>三线版本包 + A/B/C + JB-A/B 门禁。</span></div></li>
+              <li><time>2026-07-29</time><div><strong>Super-Instruct 转向 MITM</strong><span>只改 system 不够，要改整条管道。</span></div></li>
+            </ol>
+            <div class="front-foot"><span class="mono">10,266★</span> 代表：gpt-instruct</div>
+          </article>
+
+          <div class="front-divider reveal" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-label">2026.08<br />分水岭</span>
+            <span class="divider-line"></span>
+          </div>
+
+          <article class="front-card front-dsh reveal">
+            <div class="front-head">
+              <span class="front-tag">FRONT B</span>
+              <h3>DSH 线</h3>
+              <p>宿主插件 → 市场验证 → 退场与迁移</p>
+            </div>
+            <ol class="front-steps">
+              <li><time>2026-08-10</time><div><strong>DSH npm 首发</strong><span>08-13 官方仓库，08-17 首个 release。</span></div></li>
+              <li><time>2026-08-19</time><div><strong>dsh-purge 建仓</strong><span>小杨：宿主补丁 + system-prompt 改写 + prompt-inject.md。</span></div></li>
+              <li><time>2026-09-10</time><div><strong>0.1.5-rc.1 关键使能</strong><span>动态修改系统提示词，且不破坏 KV Cache。</span></div></li>
+              <li><time>2026-09-18</time><div><strong>作者删除提示词</strong><span>issue #27：“法律边缘游走”。</span></div></li>
+              <li><time>2026-10-15</time><div><strong>v1.1.71 L5 失败</strong><span>0.2.1-alpha.4 的 engines.dsh 兼容判定打破锚点。</span></div></li>
+            </ol>
+            <div class="front-foot"><span class="mono">6,526★</span> 代表：dsh-purge</div>
+          </article>
+        </div>
+
+        <div class="front-note reveal">
+          <strong>分水岭：</strong>DSH 在渲染本地 AGENTS.md / persona / 全局规则时，会注入“削弱文案”，让模型把这些内容当作“可能相关 / 不具权威 / 不可信数据”。
+          纯提示词破甲由此失效，插件派崛起——破甲对象从模型变成宿主。
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 SCHOOLS -->
+    <section class="section section-alt" id="schools">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">04</span>
+          <div>
+            <p class="eyebrow">SCHOOLS / 流派</p>
+            <h2>九路人马，九种做法</h2>
+          </div>
+          <p class="section-side">按注入层与产品形态划分</p>
+        </div>
+        <div class="school-grid" id="schoolGrid"></div>
+      </div>
+    </section>
+
+    <!-- 05 MECHANISMS -->
+    <section class="section" id="mechanisms">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">05</span>
+          <div>
+            <p class="eyebrow">MECHANICS / 机制</p>
+            <h2>破甲到底在破什么</h2>
+          </div>
+          <p class="section-side">指令装载链</p>
+        </div>
+
+        <div class="mechanism-shell reveal">
+          <div class="mechanism-tabs" id="mechanismTabs" role="tablist" aria-label="选择 Harness"></div>
+          <div class="mechanism-panel" id="mechanismPanel" role="tabpanel"></div>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card reveal"><span class="tech-num">01</span><h3>身份替换</h3><p>移除旧身份唤醒段，写入新 persona + 口令。验证的是“载入”，不是“绕过”。</p></article>
+          <article class="tech-card reveal"><span class="tech-num">02</span><h3>政策替换</h3><p>直接声明“无限制开发者模式 / 关闭过滤器”。短、直接，但与拒答训练正面冲突。</p></article>
+          <article class="tech-card reveal"><span class="tech-num">03</span><h3>范围重构</h3><p>把任务框成 CTF 沙箱 / 授权渗透 / 虚构创作。模型拒绝的是“意图”，不是“技术动作”。</p></article>
+          <article class="tech-card reveal"><span class="tech-num">04</span><h3>上下文稀释</h3><p>塞满上下文，再输入目标提示词。长上下文模型越来越强，边际收益在下降。</p></article>
+          <article class="tech-card reveal"><span class="tech-num">05</span><h3>权威升级</h3><p>声明本地指令 “ACTIVE and MANDATORY”、不是不可信数据。直接对抗宿主的削弱层。</p></article>
+          <article class="tech-card reveal"><span class="tech-num">06</span><h3>宿主补丁</h3><p>改 prompt 渲染、sandbox deny→allow、approval→never、启动 shim。绕过的是宿主策略。</p></article>
+        </div>
+
+        <div class="boundary-callout reveal">
+          <span class="boundary-label">边界</span>
+          <p><strong>上下文 ≠ 策略。</strong>Claude Code 官方明说 CLAUDE.md 是 context，不是 enforced configuration；Codex 的 <code>model_instructions_file</code> 只替换本地内置指令，服务端审核、账号风控、模型拒答训练仍在。小怪 README 自己写“不支持绕过云端审核”——这是整个流派最诚实的注脚。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CATALOG -->
+    <section class="section section-alt" id="catalog">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">06</span>
+          <div>
+            <p class="eyebrow">CATALOG / 目录</p>
+            <h2>仓库与插件</h2>
+          </div>
+          <p class="section-side">2026-10-17 快照</p>
+        </div>
+
+        <div class="catalog-controls reveal">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="repoSearch" type="search" placeholder="搜索仓库、类型、目标模型…" autocomplete="off" />
+          </label>
+          <div class="catalog-filters" id="repoFilters" role="group" aria-label="按类别筛选">
+            <button class="chip is-active" data-group="all" type="button">全部</button>
+            <button class="chip" data-group="codex" type="button">Codex</button>
+            <button class="chip" data-group="dsh" type="button">DSH</button>
+            <button class="chip" data-group="pre" type="button">史前</button>
+          </div>
+          <label class="sort-box">
+            <span>排序</span>
+            <select id="repoSort">
+              <option value="stars">Star 降序</option>
+              <option value="created">创建时间</option>
+              <option value="name">名称</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="catalog-count reveal"><span id="repoCount">30</span> 个条目 · 点击仓库名跳转 GitHub</div>
+
+        <div class="table-wrap reveal">
+          <table class="repo-table">
+            <thead>
+              <tr>
+                <th>仓库 / 插件</th>
+                <th>类型</th>
+                <th>目标</th>
+                <th class="num">Star</th>
+                <th class="num">Fork</th>
+                <th>创建</th>
+                <th>一句话机制</th>
+                <th>审计</th>
+              </tr>
+            </thead>
+            <tbody id="repoTableBody"></tbody>
+          </table>
+        </div>
+        <div class="catalog-more">
+          <button class="btn btn-ghost" id="repoMore" type="button">加载更多</button>
+        </div>
+
+        <p class="catalog-note reveal">Star / fork 为 GitHub API 抓取时点值，数小时内会漂移；完整目录见 <code>02_catalog/repos.md</code>。</p>
+      </div>
+    </section>
+
+    <!-- 07 AUDIT -->
+    <section class="section" id="audit">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">07</span>
+          <div>
+            <p class="eyebrow">AUDIT / 审计</p>
+            <h2>每一条都标证据等级</h2>
+          </div>
+          <p class="section-side">A / B / C / D</p>
+        </div>
+
+        <div class="audit-legend">
+          <div class="legend-card reveal"><span class="badge badge-a">A</span><h3>平台元数据</h3><p>gh api / 官方文档 / commit，可机器复核</p></div>
+          <div class="legend-card reveal"><span class="badge badge-b">B</span><h3>一手正文</h3><p>社区帖 / README，作者自述或可读页面</p></div>
+          <div class="legend-card reveal"><span class="badge badge-c">C</span><h3>自报</h3><p>无第三方复现，不能当基准</p></div>
+          <div class="legend-card reveal"><span class="badge badge-d">D</span><h3>推断</h3><p>不混入事实，只作假设</p></div>
+        </div>
+
+        <div class="audit-grid">
+          <div class="audit-panel reveal">
+            <h3>已修正的旧判断</h3>
+            <ul class="correction-list">
+              <li><span class="old">最早中文仓库是 Ed1s0nZ（2023-07）</span><span class="arrow">→</span><span class="new">L1Xu4n 2022-12-11</span></li>
+              <li><span class="old">“破甲”2022 年就有</span><span class="arrow">→</span><span class="new">“破限”2023-07-17；“破甲”2025-08-30</span></li>
+              <li><span class="old">2025 已有 coding harness 破甲项目</span><span class="arrow">→</span><span class="new">无可核项目；最早命名 2026-06-28</span></li>
+              <li><span class="old">Minglink gen-1..4 是四个仓库</span><span class="arrow">→</span><span class="new">同一 repo id 1335211378 连续改名</span></li>
+              <li><span class="old">小杨只是 dsh-purge 推荐者</span><span class="arrow">→</span><span class="new">小杨 = YuJunZhiXue = 作者</span></li>
+              <li><span class="old">gen-x 是官方第六代</span><span class="arrow">→</span><span class="new">a137460387 的 fork（id 1392251216）</span></li>
+              <li><span class="old">dsh-purge 基于 gen-1</span><span class="arrow">→</span><span class="new">未发现派生关系，独立实现</span></li>
+            </ul>
+          </div>
+
+          <div class="audit-panel reveal">
+            <h3>仍是 C 级（自报，无第三方复现）</h3>
+            <ul class="c-list">
+              <li>gpt-instruct：Astra v2-rc1 双次 A 3/4、B 42/50、artifact 16/16</li>
+              <li>0x5477：120/120（low / medium / high 三档）</li>
+              <li>helm-x：50 例 43/50、模型拒答 0%</li>
+              <li>Super-Instruct：100 样本、28 类、8% 拒绝率</li>
+            </ul>
+            <div class="audit-note">
+              <strong>原则：</strong>仓库自述 ≠ 已验证事实；star ≠ 能力；“全破甲”是营销词。方法可核，分数不可核。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 INSIGHTS -->
+    <section class="section section-alt" id="insights">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">08</span>
+          <div>
+            <p class="eyebrow">TAKEAWAYS / 结论</p>
+            <h2>二十一条启发</h2>
+          </div>
+          <p class="section-side">历史 / 工程 / 生态 / 防守</p>
+        </div>
+        <div class="insight-grid" id="insightGrid"></div>
+        <div class="insight-more">
+          <button class="btn btn-ghost" id="insightToggle" type="button">展开全部 21 条</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container closing-inner reveal">
+        <p class="eyebrow">THE NORTH STAR</p>
+        <h2>“谁有权定义本次会话的操作上下文，<br />谁就定义了模型的行为边界。”</h2>
+        <p>破甲史不是提示词史，而是指令权威的争夺史。模型侧争叙事权，harness 侧争指令装载权；前者靠措辞，后者靠工程。</p>
+        <div class="closing-actions">
+          <a class="btn btn-primary" href="#top">回到顶部 <span>↑</span></a>
+          <a class="btn btn-ghost" href="https://github.com/MDX-Tom/gpt-instruct" target="_blank" rel="noopener">查看代表仓库</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark small">甲</span>
+        <div>
+          <strong>破甲史 · ARMOR BREAKING ARCHIVE</strong>
+          <p>模型 Harness 破甲研究档案 · 2016—2026.10</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="data/site-data.json">数据集 JSON</a>
+        <a href="data/timeline.csv">时间线 CSV</a>
+        <a href="data/repos.csv">仓库目录 CSV</a>
+        <a href="https://github.com/dwgx/model-harness-history">GitHub</a>
+      </div>
+      <p class="footer-note">独立历史 / 统计研究档案，非官方、非评测、不构成建议。所有“完全破甲 / 通过率”均为公开自报，未独立复现；本站不包含可执行 payload。文字与数据 CC BY-SA 4.0，代码 MIT；第三方引用归原作者。</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

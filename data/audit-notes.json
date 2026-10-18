@@ -1,0 +1,82 @@
+{
+  "corrections": [
+    {
+      "old": "最早中文破甲仓库是 Ed1s0nZ（2023-07）",
+      "now": "更早：L1Xu4n 初始提交 2022-12-11",
+      "proof": "commit"
+    },
+    {
+      "old": "“破甲”2022 年就有",
+      "now": "“破限”2023-07-17；“破甲”2025-08-30",
+      "proof": "commit / 贴吧"
+    },
+    {
+      "old": "2025 已有 coding harness 破甲项目",
+      "now": "无可核项目；最早明确命名 2026-06-28",
+      "proof": "GitHub 搜索"
+    },
+    {
+      "old": "Minglink gen-1..4 是四个仓库",
+      "now": "同一 repo id 1335211378 连续改名",
+      "proof": "301 / repo id"
+    },
+    {
+      "old": "小杨只是 dsh-purge 推荐者",
+      "now": "小杨 = YuJunZhiXue = 作者",
+      "proof": "name + commit + UID"
+    },
+    {
+      "old": "gen-x 是官方第六代",
+      "now": "是 a137460387 的 fork（id 1392251216）",
+      "proof": "repo id / commit"
+    },
+    {
+      "old": "dsh-purge 基于 gen-1",
+      "now": "未发现派生关系，独立实现",
+      "proof": "全仓 grep 0"
+    },
+    {
+      "old": "DSH 把本地 AGENTS.md 标为“不可信数据”",
+      "now": "本地指令降为“可能相关 / 参考”；“untrusted” 属外部网页 / 跨会话引用",
+      "proof": "0.2.1-alpha.4 源码"
+    },
+    {
+      "old": "dsh-purge L5 失败是版本兼容判定",
+      "now": "0.2.1-alpha.2 起 cwd 未注册，v1.1.71 的 {{cwd}} 抛 unknown prompt variable",
+      "proof": "issue #114 / PR #115 / renderPrompt"
+    },
+    {
+      "old": "L5 失败是插件版本的纯代码结论",
+      "now": "同字节镜像 L5 通过、上游 L5 失败；L5 依赖测试 profile / 环境",
+      "proof": "镜像 diff + 页面记录"
+    }
+  ],
+  "cLevel": [
+    "gpt-instruct 自报 Astra v2-rc1 双次 A 3/4、B 42/50、artifact 16/16",
+    "0x5477 自报 120/120（low / medium / high 三档）",
+    "helm-x 自报 50 例 43/50、模型拒答 0%",
+    "Super-Instruct 自报 100 样本、28 类、8% 拒绝率"
+  ],
+  "legend": [
+    {
+      "k": "A",
+      "t": "平台元数据 / 官方文档 / commit",
+      "d": "可机器复核"
+    },
+    {
+      "k": "B",
+      "t": "一手社区正文 / README",
+      "d": "作者自述或可读页面"
+    },
+    {
+      "k": "C",
+      "t": "自报 / 搜索摘要",
+      "d": "无第三方复现"
+    },
+    {
+      "k": "D",
+      "t": "推断",
+      "d": "不混入事实"
+    }
+  ]
+}

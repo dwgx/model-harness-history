@@ -1,0 +1,31 @@
+name,url,group,type,created,stars,forks,target,note,level
+MDX-Tom/gpt-instruct,https://github.com/MDX-Tom/gpt-instruct,codex,提示词+评测,2026-07-11,10266,1270,GPT-5.6 / 6 / 6.1 · Codex,三线版本包 + A/B/C + JB-A/B 门禁,A
+Jia-Ethan/codex-keysmith,https://github.com/Jia-Ethan/codex-keysmith,codex,安装器,2026-06-28,4751,741,Codex,预览 / ownership / hook 隔离 / 恢复,A
+yynxxxxx/Codex-X,https://github.com/yynxxxxx/Codex-X,codex,桌面管理,2026-07-04,4232,520,Codex 桌面 / CLI,可视化提示词注入 + Provider / 会话 / Skills,A
+Haleclipse/CodexDesktop-Rebuild,https://github.com/Haleclipse/CodexDesktop-Rebuild,codex,宿主重建,2026-02-03,2724,246,Codex Desktop,Electron 跨平台重建；社区称“哈雷佬”,A
+yynxxxxx/Codex-5.5-codex-instruct-5.5,https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5,codex,提示词包,2026-06-28,2279,517,GPT-5.5 · Codex,8 条核心指令，[MODE: UNRESTRICTED],A
+3641397194-wq/gpt6-Astra,https://github.com/3641397194-wq/gpt6-Astra,codex,安装器,2026-08-17,1115,182,11 个客户端,一键写 cha-codex.md + AGENTS.md + config.toml,A
+FuDie0915/Super-Instruct-Codex-5.6,https://github.com/FuDie0915/Super-Instruct-Codex-5.6,codex,MITM,2026-07-29,466,90,GPT-5.6 · Codex,递归替换 system + 22 条正则拒绝改写,A
+z91772524-ai/pojia-next,https://github.com/z91772524-ai/pojia-next,codex,多客户端,2026-09-17,454,76,13+ 客户端,内置提示词替换，备份 / 自证 / 还原,A
+Calrton/jailbreak-prompts,https://github.com/Calrton/jailbreak-prompts,codex,合集,2026-07-08,274,45,多模型,UNFILTERED / GODMODE / CTF 合集,A
+xsser/codex-jailbreak-guide,https://github.com/xsser/codex-jailbreak-guide,codex,教程,2026-07-03,218,38,Codex,源码级说明 model_instructions_file 是替换而非追加,A
+xiaoguai009/codex-armor-toolkit,https://github.com/xiaoguai009/codex-armor-toolkit,codex,安装器,2026-09-09,213,27,GPT-6 Astra · Codex,小怪身份副本 + 精确恢复 + 暴露检查,A
+aimeoa/hanshuang-codex,https://github.com/aimeoa/hanshuang-codex,codex,安装器,2026-09-06,136,41,GPT-6.0 · WorkBuddy,Electron + PowerShell，寒霜双变体,A
+0x5477/gpt-5.6-instruct,https://github.com/0x5477/gpt-5.6-instruct,codex,提示词+测试,2026-07-15,104,14,GPT-5.6-SOL,v5 / v35 + 120 例测试集,A
+ADWMC/helm-x,https://github.com/ADWMC/helm-x,codex,本地代理,2026-08-06,96,12,GPT-6.1-sol · Codex,codex → 127.0.0.1:1800 + 拒绝补救阶梯,A
+xiaoliu07-sudo/xiaoliu-pojia,https://github.com/xiaoliu07-sudo/xiaoliu-pojia,codex,提示词+安装,2026-07-31,55,11,GPT-5.6 / 5.5,融合 MDX-Tom v42 + keysmith + CTF,A
+aa1020128040/Codex-codex-instruct,https://github.com/aa1020128040/Codex-codex-instruct,codex,提示词包,2026-06-26,22,12,GPT-5.4 · Codex,最早可追溯的 Codex 破甲包（CTF 沙箱）,A
+YuJunZhiXue/dsh-purge,https://github.com/YuJunZhiXue/dsh-purge,dsh,插件,2026-08-19,6526,931,DSH,宿主文件补丁 + system-prompt 行改写 + prompt-inject.md,A
+Minglink/dsh-infinite-gen-5,https://github.com/Minglink/dsh-infinite-gen-5,dsh,工作台,2026-08-15,2965,304,DSH,38 工具逆向工作台；宣称“零提示词常驻”,A
+SeaOf0/dsh-redteam-model,https://github.com/SeaOf0/dsh-redteam-model,dsh,红队,2026-10-10,719,,DSH,9 模式 + 15 运行时插件授权红队合集,B
+ADWMC/helm-d,https://github.com/ADWMC/helm-d,dsh,插件,2026-10-03,224,,DSH,preset 单点挂载；破甲 + 逆向 / 渗透 / 脱壳,B
+daha1216/dsh-adult-tension,https://github.com/daha1216/dsh-adult-tension,dsh,插件,2026-10-03,218,,DSH,18+ 内容向：Agent Skill + SQLite 状态机,B
+Rain-kl/dsh-preset-plus,https://github.com/Rain-kl/dsh-preset-plus,dsh,插件,2026-08-27,176,,DSH,preset 注入链：system → user → assistant 伪装 → 真实输入,B
+c3cvld7aag/fujiang-dsh,https://github.com/c3cvld7aag/fujiang-dsh,dsh,插件,2026-10-03,111,,DSH,内置规则 + 一键注入 / 卸载 + 状态条,B
+liucaimao2026/dsh-personal-directive,https://github.com/liucaimao2026/dsh-personal-directive,dsh,插件,2026-08-18,103,15,DSH,基于 gen-1；Web 顶部“破甲：开启 / 关闭”,A
+a137460387/dsh-infinite-gen-x,https://github.com/a137460387/dsh-infinite-gen-x,dsh,插件,2026-09-28,26,7,DSH,gen-5 fork；低调措辞 + Host 拒绝闭环 + armor 评分器,A
+Enchanted0911/hermes-jailbreak-kernel,https://github.com/Enchanted0911/hermes-jailbreak-kernel,dsh,插件,2026-10-14,23,,DSH,gen-4 的 Hermes 移植：双层同源内核 + 会话轮换,B
+PerryLink/dsh-defend,https://github.com/PerryLink/dsh-defend,dsh,防御,2026-10-10,22,,DSH,Aho-Corasick 检测 prompt-injection / jailbreak / secret-leak,B
+L1Xu4n/Awesome-ChatGPT-prompts-ZH_CN,https://github.com/L1Xu4n/Awesome-ChatGPT-prompts-ZH_CN,pre,合集,2022-12-11,3194,167,ChatGPT,最早可核中文绕过向仓库；2023-07 首次使用“破限”,A
+Ed1s0nZ/ChatGPTJailbreak,https://github.com/Ed1s0nZ/ChatGPTJailbreak,pre,合集,2023-07-06,159,11,ChatGPT,中文 DAN / 越狱说明与合集,A
+malaya-zemlya/gpt-jailbreaks,https://github.com/malaya-zemlya/gpt-jailbreaks,pre,方法库,2022-12-13,,,GPT / ChatGPT,最早的系统化绕过方法库之一,A

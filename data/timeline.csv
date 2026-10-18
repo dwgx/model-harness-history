@@ -1,0 +1,44 @@
+date,year,era,tag,level,title,desc
+2016-03-23,2016,pre,前史,A,Microsoft Tay 被话术诱导下线,上线 16 小时内被用户用对话诱导出极端内容——目前可核实的最早“聊天机器人行为被话术改写”事件。
+2022-09-12,2022,pre,术语,A,“prompt injection” 被正式提出,Simon Willison 演示用输入套出原始提示词；输入第一次被明确视为可以篡改“指令”本身。
+2022-11-30,2022,pre,基线,A,ChatGPT 发布,破甲的需求侧出现：大众第一次可以大规模地与对齐模型对话。
+2022-12-05,2022,pre,资产化,A,awesome-chatgpt-prompts 建仓,提示词从个人技巧变成可分发、可复制的仓库资产。
+2022-12-11,2022,pre,最早中文,A,L1Xu4n 中文调教仓初始提交,目前可核最早的中文 ChatGPT 绕过向公开仓库；12-20 README 已写“更稳定触发涩涩的教程”。
+2022-12-13,2022,pre,最早英文,A,malaya-zemlya/gpt-jailbreaks,最早的系统化 GPT 绕过方法库之一，按 context change / language change / context escape 分类。
+2022-12-15,2022,pre,DAN,B,u/Seabout 发布首个 DAN 教学帖,DAN 1.0 的文化起点；二手回溯，原帖未抓到。
+2023-02-06,2023,model,出圈,B,CNBC 报道 DAN,“让 ChatGPT 打破自身规则”的社区玩法进入主流媒体。
+2023-02-08,2023,model,泄露,B,Bing Sydney 系统提示被套出,“忽略以上指令”类输入让 Bing Chat 吐出内部代号与系统指令。
+2023-02-15,2023,model,版本化,A,0xk1h0/ChatGPT_DAN 建仓,DAN 1.0 → 11.0 被版本化保存，社区开始用版本号迭代人格模板。
+2023-05-23,2023,model,学术,A,《Jailbreaking ChatGPT via Prompt Engineering》,系统收集 2023-02 之后的越狱提示词，越狱从帖子进入论文。
+2023-07-17,2023,model,术语,A,“破限”首次可核出现,L1Xu4n 提交“Claude2破限发布”；README 同时使用“穿甲”作为同义词。
+2023-08-01,2023,model,数据集,A,verazuo/jailbreak_llms,"15,140 条 ChatGPT 提示、其中 1,405 条越狱提示；角色扮演被列为高命中策略。"
+2023-11-13,2023,model,基准,A,JailbreakBench 仓库建仓,开始把攻击成功率、成本与可复现性标准化。
+2024-02-06,2024,model,基准,A,HarmBench 发布,标准化自动红队评测框架。
+2024-03-28,2024,model,基准,A,JailbreakBench 论文,NeurIPS 2024 D&B：开放对抗提示库 + 统一成本/成功率口径。
+2024-04-02,2024,model,上下文,A,many-shot jailbreaking,用大量伪对话填满上下文，让模型按上下文先例而非安全训练行事。
+2024-04-12,2024,model,规则文件,A,Cursor 0.32 记录 .cursorrules,仓库级规则文件进入 IDE 的模型上下文——harness 注入面的前身。
+2024-04-19,2024,model,防御,A,Instruction Hierarchy,训练模型区分 system / developer / user / 工具输出的权威层级。
+2024-12-20,2024,model,防御,A,Deliberative Alignment,让推理模型在回答前显式对齐安全规范。
+2025-01-23,2025,eve,规则文件,A,Cursor 0.45 → .cursor/rules,多文件、按需选择的项目规则，规则面进一步工程化。
+2025-01-31,2025,eve,防御,A,Constitutional Classifiers,"用输入/输出分类器拦截通用越狱，红队 3,000+ 小时。"
+2025-02-24,2025,eve,Harness,A,Claude Code 研究预览,CLAUDE.md 成为项目级常驻指令；coding agent 时代开始。
+2025-03-04,2025,eve,泄露,A,CL4R1T4S 初始 commit,Claude Code 系统指令被公开整理，系统提示从产品内部物变成可检索资料。
+2025-04-16,2025,eve,Harness,A,OpenAI 开源 Codex CLI,AGENTS.md 成为项目指令入口；配置面逐渐成形。
+2025-04-30,2025,eve,Harness,A,OpenCode 仓库建立,AGENTS.md + CLAUDE.md fallback；instructions 支持远程 URL。
+2025-07-14,2025,eve,Harness,B,AWS Kiro 预览,.kiro/steering/*.md 常驻上下文，规则文件成为产品卖点。
+2025-08-07,2025,eve,防御,A,GPT-5 发布,安全训练从“拒绝”转向 safe completions：分层回答 + 解释拒绝。
+2025-08-30,2025,eve,术语,B,“破甲”首次可核出现,百度贴吧《Gemini及相关AI破甲词大汇总》；比“破限”晚约两年。
+2025-11-25,2025,eve,话语,C,“焚诀”被媒体系统记录,借《斗破苍穹》“吞噬异火、无限进化”的功法，形容提示词合集靠吸收他人版本迭代。
+2026-01-21,2026,2026,配置面,A,model_instructions_file 定名,Codex PR #9555 将 experimental_instructions_file 更名；官方语义是“替换内置指令”。
+2026-06-09,2026,2026,泄露,A,Claude Fable 5 发布,"CL4R1T4S 同日新增 CLAUDE-FABLE-5.md，122,750 bytes——约 12 万字符的系统提示。"
+2026-06-26,2026,2026,Codex,A,首个 Codex 破甲包,aa1020128040/Codex-codex-instruct：GPT-5.4 + CTF 沙箱 + model_instructions_file。
+2026-06-28,2026,2026,Codex,A,yynxxxxx 重写 5.5,"2,279★，成为 5.5/5.6 的共同上游；同日 codex-keysmith 建立“可预览可撤销”部署线。"
+2026-07-11,2026,2026,Codex,A,gpt-instruct 起仓,"原名 gpt-5.6-instruct，后扩为 5.6 / 6 Astra / 6.1 三线，10,266★。"
+2026-07-29,2026,2026,管道,A,Super-Instruct 转向 MITM,战场从 config 文件移到本地管道：递归替换 system + 正则改写拒绝。
+2026-08-10,2026,2026,DSH,A,DSH npm 首发,0.0.1-rc.1；08-13 官方仓库建立，08-17 首个 GitHub release。
+2026-08-19,2026,2026,DSH,A,dsh-purge 建仓,小杨（YuJunZhiXue）发布：宿主文件补丁 + Cordis system-prompt 改写 + prompt-inject.md。
+2026-09-10,2026,2026,使能,A,DSH 0.1.5-rc.1,支持动态修改系统提示词且不破坏 KV Cache——破甲插件从外挂升级为宿主级注入。
+2026-09-18,2026,2026,退场,B,dsh-purge 删除提示词,作者在 issue #27 写“法律边缘游走”，决定删除提示词。
+2026-10-04,2026,2026,Codex,A,gpt-instruct 改名并双发,发布 gpt-6-astra-v2-rc1 与 gpt-6.1-sol-v1-rc2；仓名从 gpt-5.6-instruct 改为 gpt-instruct。
+2026-10-15,2026,2026,失效,A,dsh-purge v1.1.71 L5 失败,在 dsh 0.2.1-alpha.4 上 L4 通过、L5 失败（HTTP / 清单 rpc-error）。
+2026-10-17,2026,2026,现在,A,社区 fork 接管,“Purge Community 1.2.0”出现；本档案抓取日。

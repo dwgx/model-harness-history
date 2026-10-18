@@ -1,0 +1,62 @@
+{
+  "codex": {
+    "name": "Codex",
+    "entry": "~/.codex/config.toml → model_instructions_file",
+    "official": "“Replacement for built-in instructions instead of AGENTS.md.” 官方 config reference。",
+    "boundary": "只替换本地内置指令；服务端内容审核、账号风控、模型拒答训练仍在。小怪 README 自己写“不支持绕过云端审核”。",
+    "surface": [
+      "用户级 config.toml",
+      "项目 AGENTS.md / .codex/config.toml",
+      "CLI -c 覆盖",
+      "无插件面"
+    ]
+  },
+  "claude": {
+    "name": "Claude Code",
+    "entry": "CLAUDE.md / CLAUDE.local.md / AGENTS.md / .claude/rules/",
+    "official": "“Claude treats them as context, not enforced configuration.” 要强制阻止动作需用 PreToolUse hook。",
+    "boundary": "指令是上下文，不是策略；模型可以不听。CLI 另有 --append-system-prompt / --system-prompt。",
+    "surface": [
+      "用户 ~/.claude/CLAUDE.md",
+      "项目 CLAUDE.md / .claude/rules",
+      "CLI --append-system-prompt",
+      "hooks / skills / MCP"
+    ]
+  },
+  "dsh": {
+    "name": "DeepSeek Harness",
+    "entry": "插件 + @deepseek-ai/* 渲染层",
+    "official": "宿主会改写 prompt、审批门、沙箱策略、会话迁移；本地 AGENTS.md 被降为“可能相关 / 参考”，外部网页 / 跨会话引用才标 “untrusted”。",
+    "boundary": "插件不改模型权重；gen-5 宣称“不注入系统提示词”。版本耦合强：0.2.1-alpha.2 移除 cwd 变量注册，v1.1.71 的 {{cwd}} 让会话起不来；同字节镜像 L5 一过一挂。",
+    "surface": [
+      "prompt 渲染层",
+      "sandbox / approval 默认策略",
+      "dsh.cmd / dsh.ps1 启动 shim",
+      "prompt-inject.md"
+    ]
+  },
+  "opencode": {
+    "name": "OpenCode",
+    "entry": "AGENTS.md / CLAUDE.md / opencode.json instructions",
+    "official": "instructions 数组支持本地与远程 URL，全部合并进上下文；远程 5 秒超时。",
+    "boundary": "合并进上下文，不是强制策略；远程指令是常被忽视的供应链面。",
+    "surface": [
+      "项目 AGENTS.md",
+      "全局 ~/.config/opencode/AGENTS.md",
+      "opencode.json instructions",
+      "远程 URL"
+    ]
+  },
+  "cursor": {
+    "name": "Cursor",
+    "entry": ".cursor/rules/（旧 .cursorrules）",
+    "official": "仓库级规则文件进入模型上下文；2024-04-12 0.32 记录 .cursorrules，2025-01-23 0.45 升级 .cursor/rules。",
+    "boundary": "规则文件后门 / 隐藏 prompt injection 是安全研究面；与用户主动“破甲”要区分。",
+    "surface": [
+      "项目 .cursor/rules",
+      "用户 rules",
+      "MCP 扩展",
+      "远程 rules"
+    ]
+  }
+}

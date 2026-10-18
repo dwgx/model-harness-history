@@ -1,0 +1,17 @@
+platform,title,url,date,author_or_data,views_replies,note
+linux.sb,【叫我小杨同学】关于破甲/破限的焚决心得和claude code/codex的破限焚决,https://linux.sb/topic/13939,2026-08-19,叫我小杨同学,669 / 13,方法论总纲：Claude 两种破法、GPT 版本差异、AGENTS.md 建议、Gemini/Grok、国模、各 harness 评价
+linux.sb,[叫我小杨同学]关于Deepseek Harness破甲问题！！！全面揭露！！！,https://linux.sb/topic/13908,2026-08-19,叫我小杨同学,"1,060 / 4",DSH 四层注入：提示词层/代码层/shim 层/文件层；关键文件表
+linux.sb,DSH破甲插件！安装即用，可视化无感开关,https://linux.sb/topic/13798,2026-08-18,流彩猫,"2,220 / 28","liucaimao2026/dsh-personal-directive；Web 顶部""破甲：开启/关闭""；基于 Minglink gen-1"
+linux.sb,分享自己写的deepseek破甲提示词（完全破甲，适合v4 flash/pro）,https://linux.sb/topic/13699,2026-08-18,reallychangye,"4,243 / 51",500 积分/张，已兑换 17 张；付费 prompt 商品化样本
+linux.sb,分享各种破甲提示词,https://linux.sb/topic/18299,2026-08-31,Kovak,"1,041 / 2",汇总市面大部分 AI 破限词；链到 chiina66/gpt-5.6--
+linux.sb,dsv4pro正式版来了有没有破甲词,https://linux.sb/topic/11959,2026-08-13,moligod,686 / 5,需求侧：新模型发布当天就有人求破甲词
+linux.sb,[叫我小杨同学] 关于Deepseek Harness 破甲插件！！！,https://linux.sb/topic/23660,2026-09-24,叫我小杨同学（= dsh-purge 作者）,"1,449 / 6",作者本人发布 dsh-purge：回退重发、Skill 管理、插件冲突提示
+linux.sb,claude opus5.5破甲相关有吗,https://linux.sb/topic/26987,2026-10-17,弥月mizuki,153 / 1,"最新需求信号：逆向时 AI 不配合，""每次都得编好久提示词与 AI 搏斗"""
+linux.do,【小杨同学】关于破甲/破限的焚决心得和claude code/codex的破限焚决,https://linux.do/t/topic/2659000,2026-07-27,"65 回复 / 11,154 浏览",,linux.sb 13939 的原版（更早 3 周）
+linux.do,[叫我小杨同学]补坑！关于Deepseek Harness破甲问题！！！全面揭露！！！,https://linux.do/t/topic/2774454,2026-08-19,—,,linux.sb 13908 的原帖
+linux.do,DSH 逆向深度使用感受 + 个人经验,https://linux.do/t/topic/2791106,2026-08-21,—,,"""单独靠自定义预设破甲不可能""；方案 = 自定义预设 + 模型针对性破限 + 小杨 DSH 破甲插件"
+linux.do,[开源推广]SuperInstruct--针对GPT5.6的破甲/破限工具项目,https://linux.do/t/topic/2689291,2026-08-01,—,,FuDie0915；Rust GUI；评论区问 NSFW prompt 集
+linux.do,破限工具的5.6sol版本：codex-keysmith更新,https://linux.do/t/topic/2607878,2026-07-18,—,,Jia-Ethan/codex-keysmith
+linux.do,更新了破限工具的ZCode版本,https://linux.do/t/topic/2524019,2026-07-04,—,,"EthanPier；评论区指出""fork 后改自己名字"""
+linux.do,求教codebuddy如何破甲破限？,https://linux.do/t/topic/2951615,2026-09-25,—,,"""一直用 dsh-purge 破甲""；codebuddy 的 dsv4.1f 道德太高"
+linux.do,Keysmith系列更新：Keysmith-Switch,https://linux.do/tag/2532-tag/2532,2026-10-05,26 回复 / 799 浏览,,更简单易用的模型破解工具

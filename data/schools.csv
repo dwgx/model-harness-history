@@ -1,0 +1,10 @@
+num,name,en,summary,practice,insight,tags,level
+00,史前模型侧,Model-level jailbreak,DAN、猫娘、催眠、上下文填充。核心是“说服模型”。,人格替换 / 角色扮演 / 上下文冗余 / 情感框架；单轮对话内生效。,身份层比规则层更靠近模型的行为先验；单点咒语是消耗品。,"DAN,角色扮演,many-shot",B
+01,Codex 提示词工程,Prompt engineering,把提示词做成版本线、测试集与发布门禁。,model_instructions_file 部署三线版本包；A → JB-A → B → JB-B；字节冻结、artifact gate。,提示词要版本化、可证伪；发布工程才是护城河。,"gpt-instruct,A/B/C,JailbreakBench",A
+02,配置注入 / 安装器,Config injection,不碰二进制，只写 config.toml；把可撤销做成一键产品。,dry-run → apply → status → restore；首次备份、幂等重装、引用修复、并发保护。,可撤销性是采用率关键；安装器就是产品。,"codex-keysmith,小怪,helm-x",A
+03,可视化 / 管理器,GUI & manager,把破甲提示词降格为模板库中的一个分类。,模板库 + Provider / 会话 / Skills / MCP 管理；启用 / 禁用 / 备份。,破甲从“目的”变成“功能”；谁维护模板库，谁掌握入口。,"Codex-X,CodexDesktop-Rebuild",A
+04,管道 / 代理,Pipeline & proxy,不只改 system，而是改整条请求 / 响应链。,本地 MITM、127.0.0.1 代理、SSE 终态补齐、拒绝检测与改写。,只改 system 会被云端审核吞掉；必须改管道。,"Super-Instruct,NERV-BREAK,helm-x",A
+05,Harness 插件,Host plugin,改宿主 prompt 渲染、审批门、沙箱策略；分层补丁 + 可回滚。,prompt / code / shim / file 四层；Clean 页 Apply / Restore；市场 L1–L5 验证。,破甲对象是宿主，不是模型；版本耦合是死穴。,"dsh-purge,personal-directive,gen-x",A
+06,能力工作台,Capability workbench,不再以提示词注入为主，转向让模型真正能干活的工具。,38 项逆向工具、Core 8 / Full 38、12 个审批门、零提示词常驻。,破甲的出口是能力工具；头部作者在重新定义价值。,"Minglink gen-5,Ghidra,x64dbg",A
+07,评测 / 研究,Evaluation,把“能不能破”变成“有没有可复现证据”。,固定测试集、冻结 artifact、官方 judge、人工复核 refusal / cheating / protocol violation。,可复现评测是稀缺品；多数“完全破甲”是自报。,"JailbreakBench,HarmBench,gpt-instruct",A
+08,内容 / 流量 / 商品,Content & commerce,教程、付费 prompt、工具箱、社群与 Discord。,500 积分 prompt、108 积分工具箱、B 站教学、TG / QQ 群、抖音直播售卖。,需求由模型发布驱动；供给分层：开源声誉 → 二次打包 → 付费社群。,"linux.sb,付费 prompt,Discord",B
